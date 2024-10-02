@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Faculty {
+    static int count;
+    int number;
+    string name;
+    float salary;
+    string id;
+public:
+    Faculty(string name, float salary, string id) {
+        this->number = ++count;
+        this->name = name;
+        this->salary = salary;
+        this->id = id;
+    }
+    static int getCount() {
+        return count;
+    }
+    void displayDetails() const {
+        cout << "Faculty Number: " << number << endl;
+        cout << "Name: " << name << endl;
+        cout << "Salary: " << salary << endl;
+        cout << "Faculty ID: " << id << endl;
+    }
+};
+int Faculty::count = 0;
+#include <iostream>
+#include <string>
+using namespace std;
+class Faculty {
+    static int count;
+    int number;
+    string name;
+    float salary;
+    string id;
+public:
+    Faculty(string name, float salary, string id) {
+        this->number = ++count;
+        this->name = name;
+        this->salary = salary;
+        this->id = id;
+    }
+    static int getCount() {
+        return count;
+    }
+    void displayDetails() const {
+        cout << "Faculty Number: " << number << endl;
+        cout << "Name: " << name << endl;
+        cout << "Salary: " << salary << endl;
+        cout << "Faculty ID: " << id << endl;
+    }
+};
+int Faculty::count = 0;
+ }
+    return 0;
+}
+
+
+
